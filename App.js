@@ -1,20 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {useEffect, useRef, useState} from "react";
+import * as Font from "expo-font";
+import AppStyles from "./src/app/styles/app/AppStyles";
+import {RootRouter} from "./src/app/router/RootRouter";
+import {View} from "react-native";
+
+
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    // Fonts
+    const [fontsLoaded, setFontsLoaded] = useState(false);
+    useEffect(() => {
+        async function loadFonts() {
+            await Font.loadAsync({
+                'Ionicons': require('./node_modules/react-native-vector-icons/Fonts/Ionicons.ttf'),
+            });
+            setFontsLoaded(true);
+        }
+
+        loadFonts();
+    }, []);
+    if (!fontsLoaded) {
+        return null;
+    }
+
+
+    return (
+        <View style={AppStyles.container}>
+            <RootRouter/>
+        </View>
+
+    );
+}

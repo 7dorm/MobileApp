@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import ColorPallet from "../app/ColorPallet";
+import ColorPallet from "../../app/ColorPallet";
 
 export default StyleSheet.create({
     container: {

@@ -1,5 +1,5 @@
 import {StyleSheet} from "react-native";
-import ColorPallet from "../app/ColorPallet";
+import ColorPallet from "../../app/ColorPallet";
 
 export default StyleSheet.create({
     container: {
@@ -11,6 +11,10 @@ export default StyleSheet.create({
         padding: 10,
         zIndex: 1000,
         marginBottom: 10,
+    },
+    name: {
+        flexDirection: 'row',
+        alignItems: "baseline",
     },
     profileButton: {
         flexDirection: 'row',

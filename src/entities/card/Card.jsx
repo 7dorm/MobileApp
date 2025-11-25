@@ -1,5 +1,5 @@
 import {Text, TouchableOpacity, View} from "react-native";
-import CardStyles from "../../app/styles/card/CardStyles";
+import CardStyles from "../../app/styles/home/details/card/CardStyles";
 import FogGradient from "../../features/backgroundGradient/FogGradient";
 import MasterCard from "../../../assets/paymentSystem/mastercard.svg";
 
@@ -13,7 +13,6 @@ export const Card = ({type}) => {
     const balance = Math.round(Math.random() * Math.pow(10, Math.round(Math.abs(Math.abs(Math.random() * 10 - 6) - 2))) * 100) / 100;
     let lastFourDigit = Math.round(Math.random() * 100000).toString();
     lastFourDigit = lastFourDigit.slice(lastFourDigit.length - 4, lastFourDigit.length);
-    console.log(lastFourDigit);
     return (
         <View>
             <TouchableOpacity style={CardStyles.cardContainer}>

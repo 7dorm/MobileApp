@@ -1,5 +1,5 @@
 import {Image, View, Text} from "react-native";
-import SectionStyles from "../../app/styles/expenses/SectionStyles";
+import SectionStyles from "../../app/styles/home/expenses/SectionStyles";
 
 
 

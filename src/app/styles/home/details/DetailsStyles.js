@@ -1,5 +1,5 @@
 import {Dimensions, StyleSheet} from 'react-native';
-import ColorPallet from "../app/ColorPallet";
+import ColorPallet from "../../app/ColorPallet";
 
 const width = Dimensions.get("window").width;
 const height = Dimensions.get("window").height;

@@ -1,6 +1,6 @@
 import {View} from "react-native";
 import {Button} from "../../shared/ui/Button";
-import ServicesStyles from "../../app/styles/services/ServicesStyles";
+import ServicesStyles from "../../app/styles/home/services/ServicesStyles";
 
 import Travel from '../../../assets/servicesIcons/travel.svg';
 import Delivery from '../../../assets/servicesIcons/delivery.svg';

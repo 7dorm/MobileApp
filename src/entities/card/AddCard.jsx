@@ -1,5 +1,5 @@
 import {Text, TouchableOpacity, View} from "react-native";
-import CardStyles from "../../app/styles/card/CardStyles";
+import CardStyles from "../../app/styles/home/details/card/CardStyles";
 import {Ionicons} from "@expo/vector-icons";
 import ColorPallet from "../../app/styles/app/ColorPallet";
 

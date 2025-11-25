@@ -14,7 +14,6 @@ const scaledIconSize = (size) => {
 };
 
 export const MenuButton = (props) => {
-
     return (
         <TouchableOpacity style={ButtonStyles.container} onPress={props.onClick}>
             <Icon

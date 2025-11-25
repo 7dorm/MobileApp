@@ -6,7 +6,7 @@ export const PageStyles = StyleSheet.create({
         display: 'flex',
         flexDirection: 'column',
         height: '100%',
-        backgroundColor: ColorPallet.foreground,
+        backgroundColor: ColorPallet.background,
         flex: 1,
     }
 })

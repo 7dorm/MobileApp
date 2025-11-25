@@ -1,15 +1,15 @@
-import {SafeAreaView} from "react-native-safe-area-context";
 import {PageStyles} from "../app/styles/page/PageStyles";
-import {Text} from "react-native";
+import {Text, View} from "react-native";
+import TopNotch from "../widgets/top-notch/TopNotch";
+import {Expenses} from "../widgets/expenses/Expenses";
 
 export default function HomePage() {
     return (
-        <SafeAreaView style={PageStyles.container}>
-            <Text>Home page</Text>
-            <Text>Home page</Text>
-            <Text>Home page</Text>
-            <Text>Home page</Text>
-
-        </SafeAreaView>
+        <View style={PageStyles.container}>
+            <TopNotch/>
+            {/*<Services/>*/}
+            {/*<Details/>*/}
+            <Expenses/>
+        </View>
     );
 }

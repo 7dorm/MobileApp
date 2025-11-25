@@ -1,9 +1,9 @@
 import {useEffect, useRef, useState} from "react";
 import * as Font from "expo-font";
+import {SafeAreaView} from "react-native-safe-area-context";
 import AppStyles from "./src/app/styles/app/AppStyles";
 import {RootRouter} from "./src/app/router/RootRouter";
-import {View} from "react-native";
-
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 
 export default function App() {
@@ -26,9 +26,9 @@ export default function App() {
 
 
     return (
-        <View style={AppStyles.container}>
+        <SafeAreaProvider>
             <RootRouter/>
-        </View>
+        </SafeAreaProvider>
 
     );
 }

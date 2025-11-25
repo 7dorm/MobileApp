@@ -14,7 +14,7 @@ const Stack = createStackNavigator();
 
 export const RootRouter = () => {
     return (
-        <View style={AppStyles.container}>
+        <SafeAreaView style={AppStyles.container}>
             <NavigationContainer>
                 <Stack.Navigator initialRouteName="Home" screenOptions={{ headerShown: false }}>
                     <Stack.Screen name={"Home"} component={HomePage}/>
@@ -26,7 +26,7 @@ export const RootRouter = () => {
                 <BottomMenu/>
             </NavigationContainer>
 
-        </View>
+        </SafeAreaView>
 
     );
 };

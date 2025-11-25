@@ -10,6 +10,7 @@ export const MenuStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         padding: 10,
-        zIndex: 1000
+        zIndex: 1000,
+
     }
 });

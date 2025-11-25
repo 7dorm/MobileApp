@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 import ColorPallet from "../app/ColorPallet";
 
-export const PageStyles = StyleSheet.create({
+export default StyleSheet.create({
     container: {
         display: 'flex',
         flexDirection: 'column',

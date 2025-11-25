@@ -1,5 +1,5 @@
 import {FlatList, View, Text} from "react-native";
-import {SectionStyles} from "../../app/styles/expenses/SectionStyles";
+import SectionStyles from "../../app/styles/expenses/SectionStyles";
 import {Operation} from "../../shared/ui/Operation";
 
 
@@ -15,27 +15,6 @@ export function Sections(props) {
                 date: "Jun 9",
                 amount: "$56.19"
             }]
-        },
-        {
-            date: "Yesterday",
-            operations: [
-                {
-                    avatar: "starbucks",
-                    accountName: "Starbucks",
-                    type: "Food",
-                    time: "19:21",
-                    date: "Jun 8",
-                    amount: "$122.47"
-                },
-                {
-                    avatar: "netflix",
-                    accountName: "Netflix",
-                    type: "Entertainment",
-                    time: "08:53",
-                    date: "Jun 8",
-                    amount: "$13.17"
-                }
-            ]
         },
         {
             date: "Yesterday",
@@ -94,13 +73,12 @@ export function Sections(props) {
     );
 
     return (
-        <View>
+        <View style={SectionStyles.flatContainer}>
             <FlatList
                 data={data}
                 renderItem={renderItem}
                 contentContainerStyle={SectionStyles.listContainer}
                 scrollEnabled={true}
-                fadingEdgeLength={1000}
             />
         </View>
     );

@@ -1,6 +1,6 @@
 import {Text, View, TouchableOpacity, Dimensions} from 'react-native';
-import {ButtonStyles} from "../../app/styles/menu/ButtonStyles";
-import Icon from "react-native-vector-icons/Ionicons";
+import ButtonStyles from "../../app/styles/menu/ButtonStyles";
+import { Ionicons } from '@expo/vector-icons';
 import ColorPallet from "../../app/styles/app/ColorPallet";
 
 
@@ -16,7 +16,7 @@ const scaledIconSize = (size) => {
 export const MenuButton = (props) => {
     return (
         <TouchableOpacity style={ButtonStyles.container} onPress={props.onClick}>
-            <Icon
+            <Ionicons
                 name={props.icon}
                 size={scaledIconSize(BASE_ICON_SIZE)}
                 color={props.selected ? ColorPallet.focus : ColorPallet.foreground} />

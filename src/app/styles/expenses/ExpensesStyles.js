@@ -1,6 +1,6 @@
 import {StyleSheet} from "react-native";
 
-export const ExpensesStyles = StyleSheet.create({
+export default StyleSheet.create({
     container: {
         marginHorizontal: 16,
         gap: 32

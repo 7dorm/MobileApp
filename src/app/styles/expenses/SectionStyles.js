@@ -1,10 +1,12 @@
-import {StyleSheet} from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 import ColorPallet from "../app/ColorPallet";
 
-export const SectionStyles = StyleSheet.create({
+const height = Dimensions.get("window").height;
+
+export default StyleSheet.create({
     listContainer: {
         gap: 24,
-        height: "83%",
+        overflow: 'scroll',
     },
     day: {
         gap: 4,
@@ -17,8 +19,7 @@ export const SectionStyles = StyleSheet.create({
     text:{
         color: ColorPallet.foreground,
         fontSize: 14,
-        fontFamily: "Inter",
-        fontWeight: "medium",
+        fontFamily: 'Inter_500Medium',
     },
     container: {
         borderRadius: 16,
@@ -54,5 +55,8 @@ export const SectionStyles = StyleSheet.create({
     section: {
         flexDirection: 'row',
         alignItems: 'center',
+    },
+    flatContainer: {
+        height: height * 0.4
     }
 });

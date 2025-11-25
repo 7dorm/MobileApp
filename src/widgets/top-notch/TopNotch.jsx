@@ -1,8 +1,8 @@
 import {Pressable, TouchableOpacity, Text, View} from 'react-native';
-import {TopNotchStyles} from "../../app/styles/top-notch/TopNotchStyles";
+import TopNotchStyles from "../../app/styles/top-notch/TopNotchStyles";
 import ColorPallet from "../../app/styles/app/ColorPallet";
 import { Avatar } from '@rneui/themed';
-import Icon from "react-native-vector-icons/Ionicons";
+import { Ionicons } from '@expo/vector-icons';
 
 export default function TopNotch(props) {
     return (
@@ -18,10 +18,10 @@ export default function TopNotch(props) {
             </TouchableOpacity>
             <View style={TopNotchStyles.actionsContainer}>
                 <TouchableOpacity>
-                    <Icon style={TopNotchStyles.icon} name="notifications" size={25}/>
+                    <Ionicons style={TopNotchStyles.icon} name="notifications" size={25}/>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <Icon style={TopNotchStyles.icon} name="qr-code" size={25}/>
+                    <Ionicons style={TopNotchStyles.icon} name="qr-code" size={25}/>
                 </TouchableOpacity>
             </View>
         </View>

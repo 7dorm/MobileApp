@@ -1,7 +1,7 @@
 import {StyleSheet} from "react-native";
 import ColorPallet from "../app/ColorPallet";
 
-export const TopNotchStyles = StyleSheet.create({
+export default StyleSheet.create({
     container: {
         backgroundColor: ColorPallet.background,
         alignItems: "center",
@@ -9,7 +9,8 @@ export const TopNotchStyles = StyleSheet.create({
         flexDirection: "row",
         width: '100%',
         padding: 10,
-        zIndex: 1000
+        zIndex: 1000,
+        marginBottom: 10,
     },
     profileButton: {
         flexDirection: 'row',
@@ -28,8 +29,7 @@ export const TopNotchStyles = StyleSheet.create({
     },
     text: {
         fontSize: 16,
-        fontFamily: 'Inter',
-        fontWeight: 'medium',
         color: ColorPallet.foreground,
+        fontFamily: 'Inter_500Medium',
     }
 });

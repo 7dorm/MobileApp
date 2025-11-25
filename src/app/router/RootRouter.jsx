@@ -3,16 +3,16 @@ import AppStyles from "../styles/app/AppStyles";
 import {NavigationContainer} from "@react-navigation/native";
 import HomePage from "../../pages/HomePage";
 import BottomMenu from "../../widgets/bottom-menu/BottomMenu";
-import {createStackNavigator} from "@react-navigation/native/src/__stubs__/createStackNavigator";
 import {View} from "react-native";
 import PaymentsPage from "../../pages/PaymentsPage";
 import HistoryPage from "../../pages/HistoryPage";
 import AnalyticsPage from "../../pages/AnalyticsPage";
 import ChatsPage from "../../pages/ChatsPage";
+import {createNativeStackNavigator} from "@react-navigation/native-stack";
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
-export const RootRouter = () => {
+export default () => {
     return (
         <SafeAreaView style={AppStyles.container}>
             <NavigationContainer>

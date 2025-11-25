@@ -1,6 +1,6 @@
 // import {useState} from "react";
 import {MenuButton} from "../../shared/ui/MenuButton";
-import {MenuStyles} from "../../app/styles/menu/MenuStyles";
+import MenuStyles from "../../app/styles/menu/MenuStyles";
 import React, {useState} from "react";
 import {View} from "react-native";
 import {useNavigation} from "@react-navigation/native";

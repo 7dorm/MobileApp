@@ -1,7 +1,7 @@
 import {StyleSheet} from 'react-native';
 import ColorPallet from "../app/ColorPallet";
 
-export const HeadingStyles = StyleSheet.create({
+export default StyleSheet.create({
     container: {
         gap: 15
     },
@@ -23,19 +23,16 @@ export const HeadingStyles = StyleSheet.create({
     text: {
         fontSize: 21,
         color: ColorPallet.foreground,
-        fontWeight: 'medium',
-        fontFamily: 'Inter',
+        fontFamily: 'Inter_500Medium',
     },
     month: {
         fontSize: 21,
         color: ColorPallet.focus,
-        fontWeight: 'medium',
-        fontFamily: 'Inter',
+        fontFamily: 'Inter_500Medium',
     },
     money: {
         fontSize: 18,
         color: ColorPallet.shade,
-        fontWeight: 'medium',
-        fontFamily: 'Inter',
+        fontFamily: 'Inter_500Medium',
     }
 })

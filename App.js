@@ -1,29 +1,21 @@
-import {useEffect, useRef, useState} from "react";
-import * as Font from "expo-font";
-import {SafeAreaView} from "react-native-safe-area-context";
-import AppStyles from "./src/app/styles/app/AppStyles";
-import {RootRouter} from "./src/app/router/RootRouter";
+import RootRouter from "./src/app/router/RootRouter";
 import { SafeAreaProvider } from "react-native-safe-area-context";
-
+import { useFonts,
+    Inter_400Regular,
+    Inter_500Medium,
+    Inter_600SemiBold,
+    Inter_700Bold
+} from '@expo-google-fonts/inter';
 
 export default function App() {
+    const [fontsLoaded] = useFonts({
+        Inter_400Regular,
+        Inter_500Medium,
+        Inter_600SemiBold,
+        Inter_700Bold,
+    });
 
-    // Fonts
-    const [fontsLoaded, setFontsLoaded] = useState(false);
-    useEffect(() => {
-        async function loadFonts() {
-            await Font.loadAsync({
-                'Ionicons': require('./node_modules/react-native-vector-icons/Fonts/Ionicons.ttf'),
-            });
-            setFontsLoaded(true);
-        }
-
-        loadFonts();
-    }, []);
-    if (!fontsLoaded) {
-        return null;
-    }
-
+    if (!fontsLoaded) return null;
 
     return (
         <SafeAreaProvider>

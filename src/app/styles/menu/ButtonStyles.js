@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 import ColorPallet from "../app/ColorPallet";
 
-export const ButtonStyles = StyleSheet.create({
+export default StyleSheet.create({
     container: {
         backgroundColor: ColorPallet.background,
         justifyContent: 'center',
@@ -10,5 +10,6 @@ export const ButtonStyles = StyleSheet.create({
     text: {
         fontSize: 12,
         color: ColorPallet.foreground,
+        fontFamily: 'Inter_500Medium',
     }
 });

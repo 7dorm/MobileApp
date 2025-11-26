@@ -1,7 +1,7 @@
 import {View, Text, FlatList, Dimensions} from "react-native";
-import DetailsStyles from "../../app/styles/home/details/DetailsStyles";
-import {Card} from "../../entities/card/Card";
-import {AddCard} from "../../entities/card/AddCard";
+import DetailsStyles from "../../../app/styles/home/details/DetailsStyles";
+import {Card} from "../../../entities/card/Card";
+import {AddCard} from "../../../entities/card/AddCard";
 
 
 const width = Dimensions.get("window").width;

@@ -1,18 +1,6 @@
 import {Image, View, Text} from "react-native";
 import SectionStyles from "../../app/styles/home/expenses/SectionStyles";
 
-
-
-/*
-
-                    avatar: "../../../assets/accountAvatars/starbucks.ico",
-                    accountName: "Starbucks",
-                    type: "Food",
-                    time: "19:21",
-                    date: "Jun 8",
-                    amount: "$122.47"
-
- */
 import starbucks from '../../../assets/accountAvatars/starbucks.png';
 import netflix from '../../../assets/accountAvatars/netflix.png';
 import man from '../../../assets/accountAvatars/man.png';

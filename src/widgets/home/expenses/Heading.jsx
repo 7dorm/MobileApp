@@ -1,7 +1,7 @@
 import {View, Text} from "react-native";
-import {Bar} from "../../shared/ui/Bar";
-import ColorPallet from "../../app/styles/app/ColorPallet";
-import HeadingStyles from "../../app/styles/home/expenses/HeadingStyles";
+import {Bar} from "../../../shared/ui/Bar";
+import ColorPallet from "../../../app/styles/app/ColorPallet";
+import HeadingStyles from "../../../app/styles/home/expenses/HeadingStyles";
 
 export function Heading(props) {
 

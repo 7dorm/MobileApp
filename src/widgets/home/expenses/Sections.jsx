@@ -1,6 +1,6 @@
 import {FlatList, View, Text} from "react-native";
-import SectionStyles from "../../app/styles/home/expenses/SectionStyles";
-import {Operation} from "../../shared/ui/Operation";
+import SectionStyles from "../../../app/styles/home/expenses/SectionStyles";
+import {Operation} from "../../../shared/ui/Operation";
 
 
 export function Sections(props) {

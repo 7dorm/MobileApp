@@ -9,9 +9,9 @@ import HistoryPage from "../../pages/mainPages/HistoryPage";
 import AnalyticsPage from "../../pages/mainPages/AnalyticsPage";
 import ChatsPage from "../../pages/mainPages/ChatsPage";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
-import NotificationsPage from "../../pages/headerPages/NotificationsPage";
+import NotificationsPage from "../../pages/assistantPages/NotificationsPage";
 import {useState} from "react";
-import {Header} from "../../widgets/notifications/Header";
+import {NotificationHeader} from "../../widgets/notifications/NotificationHeader";
 
 const Stack = createNativeStackNavigator();
 
@@ -46,7 +46,7 @@ export default () => {
                             component={NotificationsPage}
                             options={{
                                 title: "Notifications",
-                                header: (props) => (<Header title={"Notifications"} />)
+                                header: (props) => (<NotificationHeader title={"Notifications"} />)
                             }}
                         />
                     </Stack.Group>

@@ -4,7 +4,7 @@ import {useNavigation} from "@react-navigation/native";
 import MarkRead from "../../../assets/notificationsIcons/markRead.svg";
 import {Ionicons} from "@expo/vector-icons";
 
-export function Header({title}) {
+export function NotificationHeader({title}) {
     const navigation = useNavigation();
 
     return (

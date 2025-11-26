@@ -1,11 +1,11 @@
 import {View} from "react-native";
-import {Button} from "../../shared/ui/Button";
-import ServicesStyles from "../../app/styles/home/services/ServicesStyles";
+import {Button} from "../../../shared/ui/Button";
+import ServicesStyles from "../../../app/styles/home/services/ServicesStyles";
 
-import Travel from '../../../assets/servicesIcons/travel.svg';
-import Delivery from '../../../assets/servicesIcons/delivery.svg';
-import Present from '../../../assets/servicesIcons/present.svg';
-import Support from '../../../assets/servicesIcons/customer-support.svg';
+import Travel from '../../../../assets/servicesIcons/travel.svg';
+import Delivery from '../../../../assets/servicesIcons/delivery.svg';
+import Present from '../../../../assets/servicesIcons/present.svg';
+import Support from '../../../../assets/servicesIcons/customer-support.svg';
 
 export function Services() {
     const elements = [
